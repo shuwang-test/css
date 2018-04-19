@@ -1,0 +1,20 @@
+{
+  "name": "css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://study5456:sw1260593926@github.com/study5456/css.git"
+  },
+  "keywords": [],
+  "author": "shuxiaowang5456 <shuxiaowang5456@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/study5456/css/issues"
+  },
+  "homepage": "https://github.com/study5456/css#readme"
+}
