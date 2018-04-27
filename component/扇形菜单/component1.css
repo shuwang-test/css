@@ -1,0 +1,191 @@
+.cn-wrapper,
+.cn-wrapper * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+
+.cn-wrapper {
+  font-size: rem;
+  width: 26em;
+  height: 26em;
+  overflow: hidden;
+  position: fixed;
+  z-index: 10;
+  top: 100px;
+  left: 50%;
+  border-radius: 50%;
+  margin-left: -13em;
+  -webkit-transform: scale(0.1);
+  -ms-transform: scale(0.1);
+  -moz-transform: scale(0.1);
+  transform: scale(0.1);
+  pointer-events: none;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.opened-nav {
+  border-radius: 50%;
+  pointer-events: auto;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(0.2);
+}
+
+.cn-wrapper li {
+  position: absolute;
+  font-size: 1.5em;
+  width: 10em;
+  height: 10em;
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+  overflow: hidden;
+  left: 50%;
+  top: 50%;
+  margin-top: -1.3em;
+  margin-left: -10em;
+  -webkit-transition: border 0.3s ease;
+  -moz-transition: border 0.3s ease;
+  transition: border 0.3s ease;
+}
+
+.cn-wrapper li a {
+  display: block;
+  font-size: 1.18em;
+  height: 14.5em;
+  width: 14.5em;
+  position: absolute;
+  bottom: -7.25em;
+  right: -7.25em;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #fff;
+  padding-top: 1.8em;
+  text-align: center;
+  -webkit-transform: skew(-50deg) rotate(-70deg) scale(1);
+  -ms-transform: skew(-50deg) rotate(-70deg) scale(1);
+  -moz-transform: skew(-50deg) rotate(-70deg) scale(1);
+  transform: skew(-50deg) rotate(-70deg) scale(1);
+  -webkit-transition: opacity 0.3s, color 0.3s;
+  -moz-transition: opacity 0.3s, color 0.3s;
+  transition: opacity 0.3s, color 0.3s;
+  opacity: 0.8;
+}
+
+.cn-wrapper li a span {
+  font-size: 1rem;
+  font-size: 60px;
+  opacity: 0.7;
+  top: -20px;
+  left: 0px;
+}
+
+/* for a central angle x, the list items must be skewed by 90-x degrees
+in our case x=40deg so skew angle is 50deg
+items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
+.cn-wrapper li:first-child {
+  -webkit-transform: rotate(-19deg) skew(50deg);
+  -ms-transform: rotate(-19deg) skew(50deg);
+  -moz-transform: rotate(-19deg) skew(50deg);
+  transform: rotate(-19deg) skew(50deg);
+}
+
+.cn-wrapper li:nth-child(2) {
+  -webkit-transform: rotate(26deg) skew(50deg);
+  -ms-transform: rotate(26deg) skew(50deg);
+  -moz-transform: rotate(26deg) skew(50deg);
+  transform: rotate(26deg) skew(50deg);
+}
+
+.cn-wrapper li:nth-child(3) {
+  -webkit-transform: rotate(71deg) skew(50deg);
+  -ms-transform: rotate(71deg) skew(50deg);
+  -moz-transform: rotate(71deg) skew(50deg);
+  transform: rotate(71deg) skew(50deg);
+}
+
+.cn-wrapper li:nth-child(4) {
+  -webkit-transform: rotate(116deg) skew(50deg);
+  -ms-transform: rotate(116deg) skew(50deg);
+  -moz-transform: rotate(116deg) skew(50deg);
+  transform: rotate(116deg) skew(50deg);
+}
+
+.cn-wrapper li:nth-child(5) {
+  -webkit-transform: rotate(161deg) skew(50deg);
+  -ms-transform: rotate(161deg) skew(50deg);
+  -moz-transform: rotate(161deg) skew(50deg);
+  transform: rotate(161deg) skew(50deg);
+}
+
+.cn-wrapper li:nth-child(6) {
+  -webkit-transform: rotate(206deg) skew(50deg);
+  -ms-transform: rotate(206deg) skew(50deg);
+  -moz-transform: rotate(206deg) skew(50deg);
+  transform: rotate(206deg) skew(50deg);
+}
+
+.cn-wrapper li:nth-child(7) {
+  -webkit-transform: rotate(251deg) skew(50deg);
+  -ms-transform: rotate(251deg) skew(50deg);
+  -moz-transform: rotate(251deg) skew(50deg);
+  transform: rotate(251deg) skew(50deg);
+}
+
+.cn-wrapper li:nth-child(8) {
+  -webkit-transform: rotate(296deg) skew(50deg);
+  -ms-transform: rotate(296deg) skew(50deg);
+  -moz-transform: rotate(296deg) skew(50deg);
+  transform: rotate(296deg) skew(50deg);
+}
+
+.cn-wrapper li:nth-child(odd) a {
+  background-color: #47ceec;
+}
+
+.cn-wrapper li:nth-child(even) a {
+  background-color: #47ceec;
+}
+
+/* active style */
+.cn-wrapper li.active a {
+  background-color: #47ceec;
+}
+
+div.circle {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  background-color: #52bed6;
+  box-shadow: 0 0 4px 10px rgba(255, 255, 255, 0.8);
+  left: 130px;
+  top: 130px;
+  border-radius: 50%;
+}
+
+div.circle:hover {
+  background-color: #47ceec;
+  box-shadow: 0 0 4px 10px white;
+}
+
+/* hover style */
+.cn-wrapper li:not(.active) a:hover,
+.cn-wrapper li:not(.active) a:active,
+.cn-wrapper li:not(.active) a:focus {
+  background-color: #47ceec;
+  opacity: 0.95;
+}
+
+.cn-wrapper li:not(.active) a:focus {
+  position: fixed;
+  opacity: 1;
+}
+/*# sourceMappingURL=component1.css.map */
