@@ -1,0 +1,19 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.parent {
+	margin: 20px;
+	outline: 1px solid red;
+}
+.parent > div {
+	outline: 1px solid #123456;
+	padding: 2px 5px;
+	text-align: center;
+}
+.parent {
+	display: flex;
+	width: 200px;
+	overflow-x: auto;
+}

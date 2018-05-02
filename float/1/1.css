@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	padding: 100px;
+}
+body * {
+	outline: 1px solid saddlebrown;
+}
+/* .parent {
+	zoom: 1;
+	overflow: hidden;
+}
+.parent:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.child-left,
+.child-right {
+	float: left;
+}
+
+.child-right {
+	height: 300px;
+	background-color: saddlebrown;
+}
+.child-left {
+	height: 100%;
+	background-color: royalblue;
+} */
+
+.parent {
+	display: flex;
+}
+.child-left {
+	width: 30%;
+	background-color: seagreen;
+}
+
+.child-right {
+	width: 70%;
+	/* height: 800px; */
+	background-color: seashell;
+}
+p {
+	word-wrap: break-word;
+}
