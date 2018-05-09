@@ -1,0 +1,13 @@
+* {
+	margin: 0;
+}
+
+div[data-index] {
+	width: 200px;
+	height: 100px;
+	border: 1px solid;
+}
+
+div[data-index='1'] {
+	background-color: red;
+}

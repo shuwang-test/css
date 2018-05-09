@@ -1,0 +1,29 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	padding: 100px;
+}
+
+div.box {
+	width: 200px;
+	height: 100px;
+	border: 1px solid;
+	/* border-top-left-radius: 100px 50px;
+	border-top-right-radius: 100px 50px;
+	border-bottom-left-radius: 100px 50px;
+    border-bottom-right-radius: 100px 50px; */
+	border-radius: 100px / 50px;
+}
+
+div.box2 {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	/* border-color: transparent; */
+	border-color: teal;
+	border-width: 50px 100px;
+	/* border-top-color: seagreen; */
+	border-radius: 50%;
+}
