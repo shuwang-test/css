@@ -3,7 +3,7 @@
 	padding: 0;
 }
 :root {
-	font-size: 100px;
+	font-size: 16px;
 }
 li {
 	position: relative;
@@ -45,9 +45,28 @@ li::after {
 	top: 5px;
 	z-index: 2;
 }
-.box {
-	height: 8000px;
+
+div.box {
+	display: inline-block;
+	margin: 20px;
+	width: 200px;
+	height: 100px;
+	position: relative;
+	text-align: center;
+	line-height: 100px;
 }
+div.box::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	background-color: #58a;
+	transform: skew(-45deg);
+}
+
 #dest:target {
 	background-color: red;
 }
